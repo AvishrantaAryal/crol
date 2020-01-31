@@ -1,0 +1,40 @@
+:root{
+	--primary-color: #d94b38;
+	--secondary-color: #af9659;
+	--tertiary-color: #1a252e;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p{
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	color: #333;
+	margin-bottom: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.pad-0{
+	padding: 0;
+}
+.pad-top{
+	padding-top: 70px;
+}
+.pad-bot{
+	padding-bottom: 70px;
+}
+.top-bg{
+	background: var(--primary-color);
+	height: 90px;
+	position: relative;
+}

@@ -1,0 +1,44 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+    
+    # STRONG HTACCESS PROTECTION
+    <Files ~ "^.*\.([Ee][Nn][Vv])">
+     order allow,deny
+     deny from all
+     satisfy all
+    </Files>
+
+    <Files "composer.json">
+    Order Allow,Deny
+    Deny from all
+    Allow from 127.0.0.1
+    </Files>
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]\
+    
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+    
+    # STRONG HTACCESS PROTECTION
+    <Files ~ "^.*\.([Ee][Nn][Vv])">
+     order allow,deny
+     deny from all
+     satisfy all
+    </Files>
+    
+
+</IfModule>

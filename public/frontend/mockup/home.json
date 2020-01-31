@@ -1,0 +1,17 @@
+{
+	"key":"",
+	"view_path":"main",
+	"master-page":"home-master",
+	"hidden":false,
+	"page_title" : "",
+	"views" : [
+		{	
+			"key":"",
+			"view_path":"",
+			"view_detail":{
+
+			},
+			"showing":false
+		},
+	]
+}

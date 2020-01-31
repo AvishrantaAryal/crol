@@ -1,0 +1,19 @@
+.gallery-bg h4{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.gallery-image{
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	transition: all 0.3s ease-in-out;
+	border: 5px solid #eee;
+}
+.gallery-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.gallery-image:hover{
+	box-shadow: 0 0 20px 0 #555;
+}

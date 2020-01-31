@@ -1,0 +1,41 @@
+.about-heading h4{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.about-image{
+	height: 400px;
+	overflow: hidden;
+}
+.about-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.about-detail p{
+	text-align: justify;
+	padding-top: 20px;
+}
+.about-bg{
+	background: var(--primary-color);
+}
+.about-bg1{
+	background: var(--secondary-color);
+}
+.about-bg-2{
+	background: var(--tertiary-color);
+}
+.about-bg-title{
+	    padding: 70px 170px;
+}
+.about-bg-title h5{
+	text-align: center;
+	color: #eee;
+	
+}
+.about-bg-title p{
+	color: #eee;
+	text-align: justify;
+}
+.about-bg-title ol>li{
+	color: #eee;
+}
